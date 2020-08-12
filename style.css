@@ -1,18 +1,20 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 10vmax;
 }
-h1 {
-  font-weight: 600;
-}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   top: 0;
   width: 100%;
-}
-
-.picture {
+  padding: 0.5rem 2rem;
+  position: fixed;
 }
 
 .scribble {
@@ -25,10 +27,27 @@ nav {
 .organic-button {
   position: relative;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 900;
+  line-height: 1.5;
   color: white;
   background: linear-gradient(to right, #5522fa, #0074e4);
   border: none;
   border-radius: 30rem;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.organic-button:hover {
+  color: #5fddc5;
+}
+.organic-button:active {
+  outline: none;
+  transform: scale(0.98);
+  border: solid 0.5rem;
+  border-radius: 30rem;
+  border-color: #5fddc5;
+}
+.organic-button:focus {
+  outline: none;
 }
