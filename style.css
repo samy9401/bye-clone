@@ -6,6 +6,8 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   padding-top: 10vmax;
+  font-size: 1.75rem;
+  line-height: 1.5;
 }
 
 nav {
@@ -54,6 +56,8 @@ nav {
 }
 
 .wall-of-shame {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* Franzi CSS */
@@ -91,4 +95,57 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+.live-counter {
+  font-style: italic;
+  color: #999999;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+.footer-bye {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list li {
+  list-style: none;
+  background-color: #fff5ca;
+  border-radius: 20rem;
+  padding: 0.25rem 1rem;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.footer-list li a {
+  text-decoration: none;
+  color: #5522fa;
+}
+.centered {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.iframe {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+}
+.footer-credits {
+  margin-top: 4rem;
+  color: #666666;
+  font-size: 1.5rem;
+}
+.small {
+  font-size: 1rem;
+  font-style: italic;
+}
+.small a {
+  color: #666666;
 }
