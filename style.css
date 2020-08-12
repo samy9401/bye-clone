@@ -20,11 +20,18 @@ nav {
   position: fixed;
 }
 
-.scribble {
+.scribble1 {
   display: block;
   position: absolute;
   top: 5rem;
   right: 10rem;
+}
+.scribble2 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  bottom: -4rem;
 }
 
 .organic-button {
@@ -58,6 +65,62 @@ nav {
 .wall-of-shame {
   display: flex;
   flex-flow: row wrap;
+}
+
+.live-counter {
+  font-style: italic;
+  color: #999999;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+.footer-bye {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list li {
+  list-style: none;
+  background-color: #fff5ca;
+  border-radius: 20rem;
+  padding: 0.25rem 1rem;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.footer-list li a {
+  text-decoration: none;
+  color: #5522fa;
+}
+.centered {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.iframe {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+}
+.footer-credits {
+  margin-top: 4rem;
+  color: #666666;
+  font-size: 1.5rem;
+}
+.small {
+  font-size: 1rem;
+  font-style: italic;
+}
+.small a {
+  color: #666666;
+}
+.keep-it-here {
+  position: relative;
 }
 
 /* Franzi CSS */
@@ -120,57 +183,4 @@ h3 {
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
-}
-
-.live-counter {
-  font-style: italic;
-  color: #999999;
-  font-size: 1.5rem;
-  margin-bottom: 5rem;
-}
-.footer-bye {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: -1rem;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-list li {
-  list-style: none;
-  background-color: #fff5ca;
-  border-radius: 20rem;
-  padding: 0.25rem 1rem;
-  font-size: 1.125rem;
-  margin-top: 0.5rem;
-}
-
-.footer-list li a {
-  text-decoration: none;
-  color: #5522fa;
-}
-.centered {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.iframe {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 500px;
-  padding: 0.75rem;
-}
-.footer-credits {
-  margin-top: 4rem;
-  color: #666666;
-  font-size: 1.5rem;
-}
-.small {
-  font-size: 1rem;
-  font-style: italic;
-}
-.small a {
-  color: #666666;
 }
