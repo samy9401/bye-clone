@@ -176,6 +176,10 @@ h3 {
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
+.images-paths{
+  display: block;
+  margin: 3rem auto .5rem
+}
 
 .footer-list li a {
   text-decoration: none;
