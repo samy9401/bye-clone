@@ -113,6 +113,7 @@ h2 {
   text-align: center;
   flex-shrink: 0;
   margin: 0;
+  font-size: 3rem;
 }
 .card h3 {
   font-size: 1.4rem;
@@ -133,14 +134,16 @@ h2 {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  margin: 3rem;
+  padding: 5rem;
+  padding-bottom: 0rem;
 }
 
 .what-you-get-header div {
-  height: 2px;
+  height: 3px;
   width: 100%;
   flex-grow: 1;
   margin-top: 0.35rem;
+
   /*background: linear-gradient(to right, #5522fa, #0074e4);
   background-color: #5522fa;*/
 }
@@ -150,12 +153,13 @@ h2 {
 }
 
 .what-you-get-header .right {
-  background: linear-gradient(to right, #d16078, rgb(230, 113, 36));
+  background: linear-gradient(to right, #d16078, rgb(214, 129, 72));
 }
 
 .card {
   text-align: center;
 }
+
 .card p {
   color: rgb(104, 102, 102);
   font-size: 1.2rem;
@@ -175,6 +179,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 /* FOOTER */
