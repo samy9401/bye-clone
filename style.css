@@ -26,6 +26,7 @@ nav {
   top: 5rem;
   right: 10rem;
 }
+
 .organic-button {
   position: relative;
   font-size: 1.5rem;
@@ -80,19 +81,32 @@ main p{
   padding-bottom: 1rem; 
 }
 
+.images-paths {
+  display: block;
+  margin: 3rem auto 0.5rem;
+}
 /* WALL OF SHAME - SECTION */
 
 .wall-of-shame {
+  background: url("img/wall.380b32b6.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  max-width: 1400px;
-  padding: 2rem;
+  width: 100vw;
+  /* max-width: 1400px; */
+  padding: 13rem 0;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0 0 10rem;
 }
-
+.wall-of-shame:hover .fade {
+  opacity: 0.1;
+}
+.fade {
+  transition: opacity 0.2s;
+}
 .wall-of-shame img {
   transform: scale(1.03);
   width: 100%;
@@ -114,11 +128,12 @@ main p{
   text-align: center;
   flex-shrink: 0;
   margin: 0;
+  font-size: 3rem;
 }
-.what-you-get-header h3 {
+.card h3 {
+  font-size: 1.4rem;
   margin: 0 auto;
   text-align: center;
-  font-size: 2rem;
 }
 .what-you-get-section {
   display: flex;
@@ -126,6 +141,7 @@ main p{
   align-items: center;
   padding: 0rem;
   margin: 0 auto;
+  max-width: 1140px;
 }
 .what-you-get-header {
   display: flex;
@@ -134,14 +150,16 @@ main p{
   align-items: center;
   gap: 1rem;
   width: 100%;
-  margin: 3rem;
+  padding: 5rem;
+  padding-bottom: 0rem;
 }
 
 .what-you-get-header div {
-  height: 2px;
+  height: 3px;
   width: 100%;
   flex-grow: 1;
   margin-top: 0.35rem;
+
   /*background: linear-gradient(to right, #5522fa, #0074e4);
   background-color: #5522fa;*/
 }
@@ -151,14 +169,16 @@ main p{
 }
 
 .what-you-get-header .right {
-  background: linear-gradient(to right, #d16078, rgb(230, 113, 36));
+  background: linear-gradient(to right, #d16078, rgb(214, 129, 72));
 }
 
 .card {
   text-align: center;
 }
+
 .card p {
-  color: rgb(68, 66, 66);
+  color: rgb(104, 102, 102);
+  font-size: 1.2rem;
 }
 .check-img {
   margin: 0 auto;
@@ -175,6 +195,7 @@ main p{
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 /* FOOTER */
@@ -195,7 +216,7 @@ main p{
   justify-content: center;
 }
 
-.footer-list li {
+.footer-list-item {
   list-style: none;
   background-color: #fff5ca;
   border-radius: 20rem;
@@ -203,12 +224,12 @@ main p{
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
-.images-paths{
+.images-paths {
   display: block;
-  margin: 3rem auto .5rem
+  margin: 3rem auto 0.5rem;
 }
 
-.footer-list li a {
+.footer-link {
   text-decoration: none;
   color: #5522fa;
 }
@@ -231,7 +252,7 @@ main p{
   font-size: 1rem;
   font-style: italic;
 }
-.small a {
+.footer-credits-link {
   color: #666666;
 }
 .keep-it-here {
@@ -244,28 +265,14 @@ main p{
   width: 100%;
   max-width: 500px;
   bottom: -4rem;
+  left: 0;
 }
 
-/* 
-Commented out. Need to find solution as group that works for every part
-
-section {
-  display: block;
-}
-@media (min-width: 640px) {
-  h1,
-  h2,
-  h3 {
-    font-size: 4rem;
+@media (max-width: 900px) {
+  .scribble1 {
+    display: none;
+  }
+  .scribble2 {
+    display: none;
   }
 }
-h1,
-h2,
-h3 {
-  font-weight: 900;
-  font-size: 3rem;
-  text-align: center;
-  line-height: calc(4px + 2ex);
-  margin-bottom: 2rem;
-}
-*/
