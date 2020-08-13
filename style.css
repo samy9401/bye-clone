@@ -75,7 +75,10 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-
+.images-paths {
+  display: block;
+  margin: 3rem auto 0.5rem;
+}
 /* WALL OF SHAME - SECTION */
 
 .wall-of-shame {
@@ -191,7 +194,7 @@ h2 {
   justify-content: center;
 }
 
-.footer-list li {
+.footer-list-item {
   list-style: none;
   background-color: #fff5ca;
   border-radius: 20rem;
@@ -199,12 +202,8 @@ h2 {
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
-.images-paths{
-  display: block;
-  margin: 3rem auto .5rem
-}
 
-.footer-list li a {
+.footer-link {
   text-decoration: none;
   color: #5522fa;
 }
@@ -227,7 +226,7 @@ h2 {
   font-size: 1rem;
   font-style: italic;
 }
-.small a {
+.footer-credits-link {
   color: #666666;
 }
 .keep-it-here {
@@ -240,14 +239,12 @@ h2 {
   width: 100%;
   max-width: 500px;
   bottom: -4rem;
+  left: 0;
 }
 
 /* 
 Commented out. Need to find solution as group that works for every part
 
-section {
-  display: block;
-}
 @media (min-width: 640px) {
   h1,
   h2,
