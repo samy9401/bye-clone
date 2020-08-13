@@ -111,10 +111,10 @@ h2 {
   flex-shrink: 0;
   margin: 0;
 }
-.what-you-get-header h3 {
+.card h3 {
+  font-size: 1.4rem;
   margin: 0 auto;
   text-align: center;
-  font-size: 2rem;
 }
 .what-you-get-section {
   display: flex;
@@ -154,7 +154,8 @@ h2 {
   text-align: center;
 }
 .card p {
-  color: rgb(68, 66, 66);
+  color: rgb(104, 102, 102);
+  font-size: 1.2rem;
 }
 .check-img {
   margin: 0 auto;
@@ -199,9 +200,9 @@ h2 {
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
-.images-paths{
+.images-paths {
   display: block;
-  margin: 3rem auto .5rem
+  margin: 3rem auto 0.5rem;
 }
 
 .footer-list li a {
