@@ -82,16 +82,25 @@ h2 {
 /* WALL OF SHAME - SECTION */
 
 .wall-of-shame {
+  background: url("img/wall.380b32b6.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  max-width: 1400px;
-  padding: 2rem;
+  width: 100vw;
+  /* max-width: 1400px; */
+  padding: 13rem 0;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0 0 10rem;
 }
-
+.wall-of-shame:hover .fade {
+  opacity: 0.1;
+}
+.fade {
+  transition: opacity 0.2s;
+}
 .wall-of-shame img {
   transform: scale(1.03);
   width: 100%;
