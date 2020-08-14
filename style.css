@@ -42,7 +42,6 @@ nav {
   right: 10rem;
 }
 
-
 .organic-button:hover {
   color: #5fddc5;
 }
@@ -77,8 +76,8 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-main p{
-  padding-bottom: 1rem; 
+main p {
+  padding-bottom: 1rem;
 }
 
 .images-paths {
@@ -89,17 +88,40 @@ main p{
 
 .wall-of-shame {
   background: url("img/wall.380b32b6.svg");
-  background-size: cover;
+  background-size: 200%;
+  background-position: 0 0;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
-  width: 100vw;
-  /* max-width: 1400px; */
-  padding: 13rem 0;
-  align-items: flex-start;
-  margin: 0 0 10rem;
+  align-items: center;
+  gap: 1rem;
+}
+.wall-of-shame span {
+  max-width: 95%;
+  max-width: 31%;
+}
+@media (min-width: 1120px) {
+  .wall-of-shame {
+    margin-top: 8rem;
+    margin-bottom: 16rem;
+    padding: 10rem 1rem 20rem 1rem;
+  }
+}
+
+@media (max-width: 845px) {
+  .wall-of-shame span {
+    max-width: 49%;
+  }
+  .wall-of-shame {
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 845px) {
+  .wall-of-shame {
+    background-size: contain;
+    background-position: 50%;
+  }
 }
 .wall-of-shame:hover .fade {
   opacity: 0.1;
@@ -110,9 +132,11 @@ main p{
 .wall-of-shame img {
   transform: scale(1.03);
   width: 100%;
+  display: block;
 }
 
 .wall-of-shame > * {
+  display: block;
   line-height: 0;
   overflow: hidden;
   border-radius: 1rem;
@@ -121,6 +145,8 @@ main p{
     0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
     0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
     0 100px 80px rgba(0, 0, 0, 0.07);
+  position: relative;
+  height: auto;
 }
 
 /* WHAT YOU GET - SECTION */
