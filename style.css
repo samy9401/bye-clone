@@ -130,47 +130,47 @@ main {
 
 /* WHAT YOU GET - SECTION */
 .what-you-get-header-title {
-  text-align: center;
-  flex-shrink: 0;
+  display: inline-block;
+  /* position: relative; */
+  /* top: -2.25rem; */
+  padding: 0rem 1rem;
+  /* justify-content: center; */
+  /* flex-shrink: 0; */
   margin: 0;
   font-size: 3rem;
+  z-index: 0;
+  background-color: white;
 }
 
 .what-you-get-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* padding: 0rem; */
   margin: 0 auto;
   max-width: 1140px;
 }
 .what-you-get-header {
   display: flex;
+  position: relative;
   justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 5rem;
-  padding-bottom: 0rem;
 }
 
-.what-you-get-header div {
+.line {
+  background: linear-gradient(
+    to right,
+    purple,
+    #9c2d45,
+    #d16078,
+    rgb(214, 129, 72)
+  );
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: calc(50% - 1.5px);
   height: 3px;
-  width: 100%;
-  flex-grow: 1;
-  margin-top: 0.35rem;
-
-  /*background: linear-gradient(to right, #5522fa, #0074e4);
-  background-color: #5522fa;*/
-}
-
-.what-you-get-header .left {
-  background: linear-gradient(to right, purple, #9c2d45);
-}
-
-.what-you-get-header .right {
-  background: linear-gradient(to right, #d16078, rgb(214, 129, 72));
+  position: absolute;
+  margin: 0 0.5rem;
 }
 
 .card {
