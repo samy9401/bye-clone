@@ -143,6 +143,7 @@ main {
 .fade {
   transition: opacity 0.2s;
 }
+
 .wall-of-shame img {
   transform: scale(1.03);
   width: 100%;
@@ -164,74 +165,55 @@ main {
 }
 
 /* WHAT YOU GET - SECTION */
-.what-you-get-header-title {
-  text-align: center;
-  flex-shrink: 0;
-  margin: 0;
-  font-size: 3rem;
-}
-
 .what-you-get-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   max-width: 1140px;
 }
 .what-you-get-header {
   display: flex;
+  position: relative;
   justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 5rem;
-  padding-bottom: 0rem;
+  margin-bottom: 2rem;
 }
-
-.what-you-get-header div {
+.what-you-get-header-title {
+  display: inline-block;
+  padding: 0rem 1rem;
+  margin: 0;
+  font-size: 3rem;
+  z-index: 0;
+  background-color: white;
+}
+.line {
+  background: linear-gradient(
+    to right,
+    purple,
+    #9c2d45,
+    #d16078,
+    rgb(214, 129, 72)
+  );
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: calc(50% - 1.5px);
   height: 3px;
-  width: 100%;
-  flex-grow: 1;
-  margin-top: 0.35rem;
-
-  /*background: linear-gradient(to right, #5522fa, #0074e4);
-  background-color: #5522fa;*/
+  position: absolute;
+  margin: 0 1.5rem;
+}
+.what-you-get-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 0 auto;
 }
 
-.what-you-get-header .left {
-  background: linear-gradient(to right, purple, #9c2d45);
-}
-
-.what-you-get-header .right {
-  background: linear-gradient(to right, #d16078, rgb(214, 129, 72));
-}
-
-.card {
-  text-align: center;
-}
-
-.what-you-get-section-text {
-  color: rgb(104, 102, 102);
-  font-size: 1.2rem;
-}
 .check-img {
+  display: flex;
   margin: 0 auto;
   width: 48px;
 }
-.line-cover {
-  padding: 0 1rem;
-}
-.what-you-get-box {
-  width: 100%;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-  padding: 3rem;
+.what-you-get-section-text {
+  color: rgb(104, 102, 102);
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /* FOOTER */
