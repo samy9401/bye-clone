@@ -9,6 +9,15 @@ body {
   font-size: 1.75rem;
   line-height: 1.5;
 }
+h1,
+h2 {
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-align: center;
+}
 /* NAVBAR - SECTION */
 nav {
   display: flex;
@@ -55,14 +64,18 @@ nav {
 .organic-button:focus {
   outline: none;
 }
+.scribble1 {
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 10rem;
+}
+
 /* MAIN - SECTION */
 main {
   max-width: 715px;
   margin: 0 auto;
   padding: 5vmax 2rem 2rem;
-}
-h2 {
-  margin: 0 auto;
 }
 .position-center {
   text-align: center;
@@ -77,6 +90,7 @@ h2 {
   align-items: center;
 }
 main p {
+.main-text {
   padding-bottom: 1rem;
 }
 
@@ -150,17 +164,13 @@ main p {
 }
 
 /* WHAT YOU GET - SECTION */
-.what-you-get-header h2 {
+.what-you-get-header-title {
   text-align: center;
   flex-shrink: 0;
   margin: 0;
   font-size: 3rem;
 }
-.card h3 {
-  font-size: 1.4rem;
-  margin: 0 auto;
-  text-align: center;
-}
+
 .what-you-get-section {
   display: flex;
   flex-direction: column;
@@ -202,7 +212,7 @@ main p {
   text-align: center;
 }
 
-.card p {
+.what-you-get-section-text {
   color: rgb(104, 102, 102);
   font-size: 1.2rem;
 }
@@ -240,6 +250,8 @@ main p {
 .footer-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .footer-list-item {
@@ -280,12 +292,11 @@ main p {
 }
 .small {
   font-size: 1rem;
-  font-style: italic;
 }
 .footer-credits-link {
   color: #666666;
 }
-.keep-it-here {
+.anchor-scribble2 {
   position: relative;
 }
 
